@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Booking</title>
+  <link rel="stylesheet" href="appointments.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="logo-container">
+            <svg class="logo-svg" width="200" height="80" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#4169E1" />
+                        <stop offset="100%" style="stop-color:#00CED1" />
+                    </linearGradient>
+                </defs>
+                <path d="M120,30 L140,30 L160,60 L180,30 L200,30 L220,60 L240,30 L260,30 L230,90 L210,90 L190,60 L170,90 L150,90 Z"
+                    fill="none" stroke="url(#logoGradient)" stroke-width="8" />
+                <line x1="140" y1="35" x2="150" y2="45" stroke="url(#logoGradient)" stroke-width="3" />
+                <line x1="160" y1="55" x2="170" y2="65" stroke="url(#logoGradient)" stroke-width="3" />
+                <line x1="180" y1="35" x2="190" y2="45" stroke="url(#logoGradient)" stroke-width="3" />
+                <line x1="200" y1="55" x2="210" y2="65" stroke="url(#logoGradient)" stroke-width="3" />
+                <line x1="220" y1="35" x2="230" y2="45" stroke="url(#logoGradient)" stroke-width="3" />
+                <text x="200" y="120" font-family="Arial" font-size="24" fill="#333" text-anchor="middle">Med Genesis</text>
+                <text x="200" y="140" font-family="Arial" font-size="14" fill="#666" text-anchor="middle">Evolve. Heal. Transform.</text>
+            </svg>
+        </div>
+        <div class="nav-links">
+            <div class="dropdown">
+                <a href="index.html"><button>Home</button></a>
+                <div class="dropdown-menu">
+                    <div class="dropdown-content"><button>Our Team</button></div>
+                    <div class="dropdown-content"><button>Mission</button></div>
+                    <div class="dropdown-content"><button>Vision</button></div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="https://astralaiassistant.vercel.app/"><button>Genesis AI</button></a>
+                <div class="dropdown-menu">
+                    <div class="dropdown-content"><button>Features</button></div>
+                    <div class="dropdown-content"><button>Technology</button></div>
+                    <div class="dropdown-content"><button>Research</button></div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="appointments.html"><button>Book Appointment</button></a>
+                <div class="dropdown-menu">
+                    <div class="dropdown-content"><button>Book Now</button></div>
+                    <div class="dropdown-content"><button>Services</button></div>
+                    <div class="dropdown-content"><button>Locations</button></div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="https://www.medicalnewstoday.com/" target="_blank"><button>News</button></a>
+            </div>
+        </div>
+    </nav>
+  <div class="container">
+    <h1 class="title">Book an Appointment</h1>
+
+    <!-- Specialty Selection -->
+    <div class="card">
+      <h2 class="card-title">Select Specialty</h2>
+      <div class="grid" id="specialty-grid"></div>
+    </div>
+
+    <!-- Doctor Selection -->
+    <div class="card" id="doctor-card" style="display: none;">
+      <h2 class="card-title">Select Doctor</h2>
+      <div class="grid" id="doctor-grid"></div>
+    </div>
+
+    <div class="card" id="date-card" style="display: none;">
+      <h2 class="card-title">Select Date</h2>
+      <input type="date" id="date-picker" class="date-input">
+    </div>
+
+    <!-- Time Slot Selection -->
+    <div class="card" id="slot-card" style="display: none;">
+      <h2 class="card-title">Select Time Slot</h2>
+      <div class="grid" id="slot-grid"></div>
+    </div>
+
+    <!-- Booking Button -->
+    <div class="text-center" id="booking-section" style="display: none;">
+      <button class="btn" id="book-btn">Book Appointment</button>
+      <p class="status-message" id="booking-status"></p>
+    </div>
+  </div>
+
+  <script src="appointments.js"></script>
+</body>
+</html>

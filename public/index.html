@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Med Genesis</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="logo-container">
+            <svg class="logo-svg" width="200" height="80" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#4169E1" />
+                        <stop offset="100%" style="stop-color:#00CED1" />
+                    </linearGradient>
+                </defs>
+                <path d="M120,30 L140,30 L160,60 L180,30 L200,30 L220,60 L240,30 L260,30 L230,90 L210,90 L190,60 L170,90 L150,90 Z"
+                    fill="none" stroke="url(#logoGradient)" stroke-width="8" />
+                <line x1="140" y1="35" x2="150" y2="45" stroke="url(#logoGradient)" stroke-width="3" />
+                <line x1="160" y1="55" x2="170" y2="65" stroke="url(#logoGradient)" stroke-width="3" />
+                <line x1="180" y1="35" x2="190" y2="45" stroke="url(#logoGradient)" stroke-width="3" />
+                <line x1="200" y1="55" x2="210" y2="65" stroke="url(#logoGradient)" stroke-width="3" />
+                <line x1="220" y1="35" x2="230" y2="45" stroke="url(#logoGradient)" stroke-width="3" />
+                <text x="200" y="120" font-family="Arial" font-size="24" fill="#333" text-anchor="middle">Med Genesis</text>
+                <text x="200" y="140" font-family="Arial" font-size="14" fill="#666" text-anchor="middle">Evolve. Heal. Transform.</text>
+            </svg>
+        </div>
+        <div class="nav-links">
+            <div class="dropdown">
+                <a href="index.html"><button>Home</button></a>
+                <div class="dropdown-menu">
+                    <div class="dropdown-content"><button>Our Team</button></div>
+                    <div class="dropdown-content"><button>Mission</button></div>
+                    <div class="dropdown-content"><button>Vision</button></div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="https://astralaiassistant.vercel.app/"><button>Genesis AI</button></a>
+                <div class="dropdown-menu">
+                    <div class="dropdown-content"><button>Features</button></div>
+                    <div class="dropdown-content"><button>Technology</button></div>
+                    <div class="dropdown-content"><button>Research</button></div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="appointments.html"><button>Book Appointment</button></a>
+                <div class="dropdown-menu">
+                    <div class="dropdown-content"><button>Book Now</button></div>
+                    <div class="dropdown-content"><button>Services</button></div>
+                    <div class="dropdown-content"><button>Locations</button></div>
+                </div>
+            </div>
+            <div class="dropdown">
+            <a href="https://www.medicalnewstoday.com/" target="_blank"><button>News</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="logo-rectangle">
+            <svg width="400" height="150" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#00C9FF;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#92FE9D;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.5)" />
+                </filter>
+                <text x="10" y="80" font-family="Verdana" font-size="64" fill="url(#textGradient)" filter="url(#shadow)">
+                    Med Genesis
+                </text>
+            </svg>
+        </div>
+
+        <div class="mission-carousel-container">
+            <div class="mission-statement">
+                <h2>Our Mission</h2>
+                <p>We aim to streamline the patient doctor communication and increase the efficiency at which hospitals and clinics operate while at the same time making sure that the patients recieve clear and timely diagnosis for their conditions and the problem management part thereafter.</p>
+                <br><p>We achieve this with the help of our Genesis AI which is the first contact a patient has with a healthcare provider, which coupled with our automated appointment assignment with the right specialist greatly enhances communication and reduces friction.  </p>
+            </div>
+
+            <div class="carousel-container">
+                <button class="carousel-arrow left">&lt;</button>
+                <button class="carousel-arrow right">&gt;</button>
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <div class="topbar">Genesis AI</div>
+                        <img src="/media/Genesisai.png" alt="Genesis AI">
+                        <p style="padding-top: 5px;">Allows patients to discuss their symptoms and then makes a rough diagnosis estimating the severity of the situation, suggested course of action and the type of specialist to consult.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="topbar">Automated appointments</div>
+                        <img src="/media/appointment.png" alt="Automated appointments">
+                        <p style="padding-top: 5px;">The appointments can be booked with the specialist directly after consulting Genesis and the specialist-appointment database updates in real time reflecting the empty slots.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="topbar">Positive feedback loop</div>
+                        <img src="/media/feedbackloop.png" alt="Positive feedback loop">
+                        <p style="padding-top: 5px;">The underlying model can be trained using the feedback form from doctors informing what kind of data the ai was more/less accurate, further enhancing its capablities.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="topbar">Patient data privacy</div>
+                        <img src="/media/patientprivacy.webp" alt="patient data privacy">
+                        <p style="padding-top: 5px;">The patients' medical data will only be used to train the model locally and will never leave their healthcare institution, ensuring complete confidentiality.</p>
+                    </div>
+                </div>
+                <div class="carousel-buttons"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <form class="contact-form" id="contact-form">
+                <h2>Contact Us</h2>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="user_name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="user_email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+                <div class="message success" id="successMessage">Message sent successfully!</div>
+                <div class="message error" id="errorMessage">Failed to send message. Please try again.</div>
+            </form>
+
+            <div class="footer-content" style="padding: 10px; font-size:large;" >
+                <div class="contact-info">
+                    <a href="form.html"><button type="button" class="feedback-button">Feedback Form</button></a>
+
+                    <div class="phone" style="padding-top: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a7 7 0 0 0 14 0v1H9V16.92a7 7 0 0 0 14 0v1h-4a2 2 0 0 1-2 2v3a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a7 7 0 0 1-14 0v1h4a2 2 0 0 1 2-2v-3a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v3a7 7 0 0 1 14 0v1h4z"></path>
+                        </svg>
+                        +91 xxxx xxxx xx
+                    </div>
+                    <div class="email" style="padding-top: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22 6 12 13 2 6"></polyline>
+                        </svg>
+                        <a href="exampleemail@example.com" style="color: #007bff;">exampleemail@example.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="homepage.js"></script>
+</body>
+</html>

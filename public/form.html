@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDGENESIS AI Feedback</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <svg class="logo" viewBox="0 0 100 100" fill="none" stroke="#3498db" stroke-width="2.5">
+                <path d="M30 20 C30 15, 40 15, 40 20"/>
+                <path d="M60 20 C60 15, 70 15, 70 20"/>
+                <path d="M30 20 C30 30, 35 40, 50 40"/>
+                <path d="M70 20 C70 30, 65 40, 50 40"/>
+                <path d="M50 40 L50 60"/>
+                <path d="M50 60 C50 70, 30 70, 30 80"/>
+                <circle cx="30" cy="85" r="8"/>
+                <circle cx="30" cy="85" r="4"/>
+                <circle cx="30" cy="85" r="2" fill="#3498db"/>
+            </svg>
+            <h1>MEDGENESIS AI</h1>
+        </div>
+        
+        <form id="feedbackForm">
+            <div class="form-group">
+                <label for="specialization">Select Doctor's Specialization:</label>
+                <select id="specialization" required>
+                    <option value="">Choose Specialization</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="orthopedics">Orthopedics</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="dermatology">Dermatology</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="diseaseSelect">
+                <label for="disease">Select Disease:</label>
+                <select id="disease" required>
+                    <option value="">Choose Disease</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="suggestion">Your Suggestions:</label>
+                <textarea id="suggestion" rows="4" placeholder="Please provide your suggestions here..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>How accurate was the AI?</label>
+                <div class="stars" id="starRating">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+            </div>
+
+            <button type="submit">Submit Your Feedback</button>
+        </form>
+    </div>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <h2>Success!</h2>
+            <p>Your feedback has been submitted successfully.</p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
